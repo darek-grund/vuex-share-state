@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <shared-state1></shared-state1>
+    <shared-state2></shared-state2>
     <p>
       For guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,10 +33,17 @@
 </template>
 
 <script>
+import SharedState1 from './SharedState1.vue';
+import SharedState2 from './SharedState2.vue';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String,
+  },
+  components: {
+    SharedState1,
+    SharedState2,
   },
 };
 </script>

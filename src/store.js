@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    shared: 1,
+    shared: 'Shared State',
   },
   mutations: {
     UPDATE_SHARED(state, payload) {
